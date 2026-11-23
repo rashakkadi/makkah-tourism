@@ -1,0 +1,390 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Background */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(34, 29, 22, 0.55), rgba(34, 29, 22, 0.55)),
+        url("img/Makkah2.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #332c23;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px;
+}
+
+/* Main Container */
+.page {
+    width: 92%;
+    max-width: 1050px;
+    min-height: 85vh;
+
+    background: rgba(255, 253, 248, 0.97);
+
+    border-radius: 28px;
+    padding: 42px;
+
+    text-align: center;
+
+    border: 1px solid #d8bd73;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.26);
+}
+
+/* Header */
+header {
+    max-width: 840px;
+
+    margin: 0 auto 38px auto;
+    padding: 34px 32px;
+
+    background: linear-gradient(135deg, #f7ecd2, #fffaf0);
+
+    border-left: 6px solid #b8923e;
+    border-radius: 22px;
+
+    box-shadow: 0 8px 24px rgba(82, 58, 25, 0.10);
+}
+
+/* Titles */
+h1 {
+    color: #6a4717;
+    font-size: 44px;
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+h2 {
+    color: #2f6652;
+    font-size: 28px;
+    margin-bottom: 18px;
+
+    font-weight: 700;
+}
+
+h3 {
+    color: #2f6652;
+    font-size: 23px;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+}
+
+/* Paragraphs */
+p {
+    max-width: 760px;
+
+    margin: 0 auto 18px auto;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    color: #3e362c;
+}
+
+/* The Small Label under Main Title */
+.hero-note {
+    display: inline-block;
+
+    background: #ead9a9;
+    color: #4f3512;
+
+    padding: 10px 26px;
+    margin-bottom: 20px;
+
+    border-radius: 999px;
+    border: 1px solid #c7a95b;
+
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 5px 14px rgba(184, 146, 62, 0.16);
+}
+
+/* Main Layout */
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+}
+
+/* Cards */
+.card,
+.text-box {
+    width: 100%;
+    max-width: 830px;
+
+    margin: 0 auto;
+    padding: 30px 32px;
+
+    background: #faf4e6;
+
+    border-left: 6px solid #b8923e;
+    border-radius: 22px;
+
+    text-align: left;
+
+    box-shadow: 0 8px 22px rgba(82, 58, 25, 0.10);
+}
+
+/* Card Titles */
+.card h2,
+.text-box h3 {
+    text-align: center;
+}
+
+/* Text inside Cards */
+.card p,
+.text-box p {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    color: #3e362c;
+}
+
+/* Lists */
+ul,
+ol {
+    max-width: 720px;
+
+    margin: 18px auto 0 auto;
+
+    list-style-position: inside;
+
+    font-size: 18px;
+    line-height: 2;
+
+    color: #3d352b;
+
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Navigation and Buttons */
+.links,
+nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+    flex-wrap: wrap;
+
+    margin: 24px 0;
+}
+
+a {
+    text-decoration: none;
+
+    background-color: #2f6652;
+    color: white;
+
+    padding: 13px 30px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    transition: 0.25s ease;
+
+    box-shadow: 0 5px 14px rgba(47, 102, 82, 0.22);
+}
+
+a:hover {
+    background-color: #b8923e;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+/* Images */
+.image-card {
+    width: 100%;
+    max-width: 830px;
+}
+
+img {
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+
+    display: block;
+
+    margin: 28px auto 10px auto;
+
+    border-radius: 20px;
+    border: 3px solid #d8bd73;
+
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+}
+
+/* Places Page */
+.places {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 34px;
+}
+
+.place-card {
+    transition: 0.25s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-4px);
+}
+
+.place-card h2 {
+    margin-bottom: 18px;
+}
+
+.place-card p {
+    margin-bottom: 24px;
+}
+
+/* Text Box Between Zamzam Images */
+.text-box {
+    margin-top: 30px;
+    margin-bottom: 32px;
+}
+
+/* Highlight */
+mark {
+    background-color: #d8bd73;
+    color: #2f2a22;
+
+    padding: 4px 9px;
+    border-radius: 8px;
+}
+
+/* Contact Information */
+address {
+    display: block;
+
+    max-width: 700px;
+    margin: 12px auto 0 auto;
+
+    font-style: normal;
+
+    font-size: 18px;
+    line-height: 1.9;
+
+    color: #3d352b;
+
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    max-width: 830px;
+
+    margin: 38px auto 0 auto;
+    padding: 22px 28px;
+
+    background: #faf4e6;
+
+    border-left: 6px solid #b8923e;
+    border-radius: 20px;
+
+    box-shadow: 0 6px 18px rgba(82, 58, 25, 0.08);
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #6f4b18;
+    margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+        align-items: flex-start;
+        background-attachment: scroll;
+    }
+
+    .page {
+        width: 100%;
+        padding: 24px;
+        border-radius: 20px;
+    }
+
+    header,
+    .card,
+    .text-box,
+    footer {
+        padding: 22px;
+        border-left: 4px solid #b8923e;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p,
+    li,
+    address {
+        font-size: 16px;
+    }
+
+    ul,
+    ol {
+        text-align: left;
+        line-height: 1.9;
+    }
+
+    .links,
+    nav {
+        gap: 12px;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        border-radius: 14px;
+        margin-top: 20px;
+    }
+}
